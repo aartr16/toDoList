@@ -14,6 +14,7 @@
 		BD4F8E47286A01E0005C2800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4F8E46286A01E0005C2800 /* Assets.xcassets */; };
 		BD4F8E4A286A01E0005C2800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4F8E48286A01E0005C2800 /* LaunchScreen.storyboard */; };
 		BD4F8E52286A0503005C2800 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F8E51286A0503005C2800 /* ToDoTableViewController.swift */; };
+		BD4F8E54286A538E005C2800 /* toDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F8E53286A538E005C2800 /* toDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BD4F8E49286A01E0005C2800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD4F8E4B286A01E0005C2800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD4F8E51286A0503005C2800 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		BD4F8E53286A538E005C2800 /* toDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		BD4F8E2E286A01DF005C2800 = {
 			isa = PBXGroup;
 			children = (
+				BD4F8E53286A538E005C2800 /* toDo.swift */,
 				BD4F8E51286A0503005C2800 /* ToDoTableViewController.swift */,
 				BD4F8E39286A01DF005C2800 /* toDoList */,
 				BD4F8E38286A01DF005C2800 /* Products */,
@@ -144,6 +147,7 @@
 				BD4F8E3B286A01DF005C2800 /* AppDelegate.swift in Sources */,
 				BD4F8E52286A0503005C2800 /* ToDoTableViewController.swift in Sources */,
 				BD4F8E3D286A01DF005C2800 /* SceneDelegate.swift in Sources */,
+				BD4F8E54286A538E005C2800 /* toDo.swift in Sources */,
 				BD4F8E45286A01DF005C2800 /* toDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
