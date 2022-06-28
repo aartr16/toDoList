@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ToDoTableViewController: UITableViewController {
+
+
+class AddToViewController: UITableViewController {
     
     // will call function in viewdidload function to populate todo array
     
@@ -15,13 +17,21 @@ class ToDoTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         toDos = createToDos()
+        //print(toDos[1].name)
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     } // END OF VIEW DID LOAD FUNCTION
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+      // this gives us a single ToDo
+      let toDo = toDos[indexPath.row]
+
+      performSegue(withIdentifier: "markAsComplete", sender: toDo)
+    }
 
     // MARK: - Table view data source
 
@@ -49,6 +59,17 @@ class ToDoTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if let addVC = segue.destination as? AddToDoViewController {
+        addVC.previousVC = self
+      }
+        if let completeVC = segue.destination as? CompleteToDoViewController {
+          if let toDo = sender as? ToDo {
+            completeVC.selectedToDo = toDo
+            completeVC.previousVC = self
+          }
+        }
+    }
     
     
     // returns an array of todo's
